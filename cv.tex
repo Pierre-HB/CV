@@ -1,7 +1,9 @@
 \documentclass[11pt,a4paper]{moderncv}
+\usepackage{multicol}
 % moderncv themes
 \moderncvtheme[green]{casual}
 % \moderncvtheme[green]{classic}
+
 
 % character encoding
 \usepackage[utf8]{inputenc}
@@ -12,70 +14,160 @@
 % personal data
 \firstname{Pierre}
 \familyname{Hubert-Brierre}
-\title{étudient en recherche informatique}
-\address{69007 Lyon}{France}
-\mobile{+33 6 63 31 76 25}
-\phone{06 63 31 76 25}
+\title{Étudiant chercheur en informatique graphique}
+\address{91400 Orsay}{France}
+\phone{+33 (0) 6 63 31 76 25}
 \email{pierre.hubert-brierre@ens-lyon.fr}
 \extrainfo{\url{https://github.com/Pierre-HB}}
 \photo[64pt]{photo_Pierre.jpg}
 \begin{document}
+
+
+
 \maketitle
 
 
-\section{Parcour}
+\section{Cursus}
 
 
-\subsection{Dipômes}
-
-
-
-\cventry{2018}{BAC}{S (SI) euroéen mention TB}
-{Lycée Jules Ferry (Cannes)}{}{}
-
-\cventry{2021}{Double Licence}{Maths / Info}
-{Lyon 1 (Lyon)}{}{}
-
-\subsection{Stages}
-
-\cventry{2022}{stage}{University of Edimburg}
-{Edimburg}{12 semaines}{NLP for computer graphics, with Kartic SUBR}
-
-\cventry{2021}{stage}{INRIA}
-{Bordeaux}{6 semaines}{couches minces, with Pascal BARLA}
-
-\cventry{2014}{stage}{Cochlear}
-{Bruxelles}{1 semaines}{Intoduction a la recherche}
-
-\subsection{Cursus}
-
-
-\cvline{2020-}{étudient ENS (Lyon)}
+\cvline{2024-}{Doctorant Informatique (Lyon 1/Polytechnique)}
+\cvline{2020-2024}{Normalien élève ENS (Lyon)}
+\cvline{2023-2024}{étudiant PLR ENS (Lyon)}
+\cvline{2022-2023}{étudiant ID3D (Lyon) (master d'infographie)}
+\cvline{2021-2022}{étudiant master ENS (Lyon) (suivit du cours de CGDI)}
+\cvline{2020-2021}{étudiant licence ENS (Lyon)}
 \cvline{2018-2020}{MPSI, MP* Lycée St-Louis (Paris)}{}{}
 
 
-\section{Langue}
-\cvlanguage{Français}{langue mère}{}
-\cvlanguage{Anglais}{B2 / C1}{préparation du CAE}
-
-\section{Langage de programmation}
-\cvlistdoubleitem{JAVA}{C / C++}
-\cvlistdoubleitem{Python}{Ocaml}
 
 
+% \vspace{0.5cm}
+\section{Stages}
 
-\section{Projets personnels (\href{https://github.com/Pierre-HB}{Github})}
-\cvdoubleitem{2018}{Jeu 2D en JAVA, avec LWJGL}{2019}{Premier moteur 3D en Python}
-\cvdoubleitem{2019/2020}{Meilleur moteur 3D en Python et Ocaml}{2020}{Moteur 3D utilisant OpenGL en JAVA}
-\cvdoubleitem{2020}{Premier algorithme de ray tracing en JAVA}{2020}{Programme glouton pour le voyageur de commerce très optimisé en C++}
 
-\section{Points personels}
+\cventry{2024}{LIX}{Polytechnique}{5 mois, avec Marie-Paule CANI}
+{\newline Optimisation de surfaces implicites}{\begin{itemize} \item Stage préparatoire pour mon sujet de thèse.\end{itemize}}
+\vspace{0.5cm}
 
-\subsection{Centres d'interets}
-\cvdoubleitem{}{Danse Rock}{}{Alpinisme}
+% \cventry{2023}{LIRIS}{Lyon}{3 mois}
+% {Modélisation par surfaces implicites, avec GALIN Eric}{Stage ayant mené à trois découvertes significatives dans le domaine, une publication est en cours de rédaction.}
+\cventry{2023}{LIRIS}{Lyon 1}{3 mois, avec Eric GALIN}
+{\newline Modélisation par surfaces implicites}{\begin{itemize} \item Stage préparatoire pour mon sujet de thèse.\item Trois découverte majeurs.\end{itemize}}
+\vspace{0.5cm}
 
-\subsection{Qualitées}
-\cvdoubleitem{}{Autonome}{}{Polyvalent}
+\cventry{2023}{LIRIS}{Lyon 1}{5 mois, avec Jean-Claude IHEL}
+{\newline Échantillonnage défensif pour le rendu Monte Carlo}{\begin{itemize} \item Deux découverte mineure.\end{itemize}}
+\vspace{0.5cm}
+
+\cventry{2022}{University of Edimburg}{Édimbourg}{3 mois, avec Kartic SUBR}
+{\newline NLP pour l'infographie}{\begin{itemize} \item Génération automatique de scene 3D.\item Étude utilisateur.\end{itemize}}
+\vspace{0.5cm}
+
+\cventry{2021}{INRIA}{Bordeaux}{6 semaines, avec Pascal BARLA}
+{\newline Modélisation de couches minces}{\begin{itemize} \item Développement d'un logiciel pour précalculer des BRDF.\item Ce logiciel a part la suite été réutilisé.\end{itemize}}
+\vspace{0.5cm}
+
+%stage de 3eme...
+\cventry{2014}{Cochlear}{Bruxelles}{1 semaines, avec Florent HUBERT-BRIERRE}{\newline Introduction à la recherche}{}
+
+\newpage
+\section{Diplômes}
+
+
+\cventry{2024}{Diplôme de l'ENS}{Informatique}
+{ENS (Lyon)}{Master en recherche informatique}{}
+
+\cventry{2023}{Master ID3D}{Informatique}
+{Lyon 1 (Lyon)}{Master en informatique graphique}{}
+
+\cventry{2022}{Cambridge Advanced}{Anglais niveau C1}
+{}{}{}
+
+\cventry{2021}{Licence}{Mathématique}{Lyon 1 (Lyon)}{}{}
+\cventry{2021}{Licence}{Informatique}{Lyon 1 (Lyon)}{}{}
+
+\cventry{2018}{BAC}{S (SI) européen mention TB}
+{Lycée Jules Ferry (Cannes)}{}{}
+
+
+
+\section{Enseignements}
+
+\cventry{2025}{Introduction OpenGL}{Polytechnique (36h) M1}
+{Assistant professeur}{}{}
+\cventry{2024}{Vision assisté par ordinateur}{Polytechnique (12h) M2}
+{Assistant professeur}{}{}
+
+
+% \begin{multicols}{2}
+% %To set the doubleitem size:
+% \setlength{\hintscolumnwidth}{0.175\textwidth}
+% \setlength{\separatorcolumnwidth}{0.015\textwidth}
+% \setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
+% \setlength{\listdoubleitemcolumnwidth}{\maincolumnwidth-\listitemsymbolwidth-\separatorcolumnwidth-\listitemsymbolwidth}
+% \setlength{\listdoubleitemcolumnwidth}{0.5\listdoubleitemcolumnwidth}
+
+
+
+
+
+% \end{multicols}
+
+% \vspace{-1cm}
+\section{Projets personnels (\href{https://github.com/Pierre-HB}{https://github.com/Pierre-HB})}
+
+
+\cvitem{2022}{Création procédurale de ville reliées par un réseau routier C++}
+\cvitem{2022}{Simplification de surface implicite en C++}
+\cvitem{2020}{Programme glouton pour le voyageur de commerce très optimisé en C++}
+\cvitem{2020}{Premier algorithme de ray tracing en JAVA}
+\cvitem{2020}{Moteur 3D utilisant OpenGL en JAVA}
+\cvitem{2019/2020}{Meilleur moteur 3D en Python et Ocaml}
+\cvitem{2019}{Premier moteur 3D en Python}
+\cvitem{2018}{Jeu 2D en JAVA, avec LWJGL}
+
+\section{Langues}
+
+
+\cvlanguage{Français}{langue maternelle}{}
+\cvlanguage{Anglais}{C1 (Cambridge Advanced)}{}
+
+% \columnbreak
+
+
+\section{Langages de programmation}
+
+\vspace{0.2cm}
+
+\cvlistdoubleitem{Python}{C / C++}
+
+\section{Points personnels}
+% \begin{multicols}{2}
+%To set the doubleitem size:
+% \setlength{\hintscolumnwidth}{0.175\textwidth}
+% \setlength{\separatorcolumnwidth}{0.015\textwidth}
+% \setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
+% \setlength{\listdoubleitemcolumnwidth}{\maincolumnwidth-\listitemsymbolwidth-\separatorcolumnwidth-\listitemsymbolwidth}
+% \setlength{\listdoubleitemcolumnwidth}{0.5\listdoubleitemcolumnwidth}
+
+% \vspace{0.2cm}
+\subsection{Centres d'intérêts}
+
+
+\cvlistdoubleitem{Jeux vidéos}{Danse rock}
+\cvlistdoubleitem{Alpinisme}{Roller}
+
+% \columnbreak
+
+\vspace{0.2cm}
+\subsection{Qualités}
+
+
+\cvlistdoubleitem{Polyvalent}{Autonome}
+
+% \end{multicols}
 
 
 \end{document}
+
+
