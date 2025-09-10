@@ -1,11 +1,12 @@
 \documentclass[11pt,a4paper]{moderncv}
+\usepackage{multicol}
 % moderncv themes
-% \moderncvtheme[green]{casual}
-\moderncvtheme[green]{classic}
+\moderncvtheme[green]{casual}
+% \moderncvtheme[green]{classic}
+
 
 % character encoding
 \usepackage[utf8]{inputenc}
-% \usepackage{fontspec}
 % adjust the page margins
 % \usepackage[scale=0.8]{geometry}
 \usepackage[top=2cm,bottom=2.5cm,left=2cm,right=2cm]{geometry}
@@ -13,77 +14,128 @@
 % personal data
 \firstname{Pierre}
 \familyname{Hubert-Brierre}
-\title{Computer Science student}
-\address{69007 Lyon}{France}
-\mobile{+33 6 63 31 76 25}
-% \phone{06 63 31 76 25}
+\title{Computer Graphics PhD Student}
+\address{91400 Orsay}{France}
+\phone{+33 (0) 6 63 31 76 25}
 \email{pierre.hubert-brierre@ens-lyon.fr}
 \extrainfo{\url{https://github.com/Pierre-HB}}
 % \photo[64pt]{photo_Pierre.jpg}
 \begin{document}
+
+
 \maketitle
 
-\vspace{-1.5cm}
+% \vspace{1cm}
+\section{Publication}
+\cventry{2025}{Accelerating Signed Distance Functions}{Pacific Graphics}{}{}{P. Hubert-Brierre, E. Guérin, A. Peytavie, E. Galin}
 
-\section{\textbf{Experience}}
+\vspace{0.5cm}
+\section{Certificates}
 
-\subsection{\textbf{Curriculum:}}
+
+\cventry{2024}{ENS Certificate}{Computer Science}
+{ENS (Lyon)}{Certificate of fundamental research}{}
+
+\cventry{2023}{Master of Science ID3D}{Computer Graphics}
+{Claude Bernard University (Lyon)}{}{}
+
+\cventry{2022}{Cambridge Advanced}{English Level C1}
+{}{}{}
+
+\cventry{2021}{Honour Degree}{Mathematics}{Claude Bernard University (Lyon)}{}{}
+\cventry{2021}{Honour Degree}{Computer Science}{Claude Bernard University (Lyon)}{}{}
+
+\cventry{2018}{Baccalaureate}{S (SI) European with highest honour}
+{Jules Ferry High School (Cannes)}{}{}
 
 
-\cvline{2022-}{University Claude Bernard (Lyon), M2 ID3D}
+\vspace{0.5cm}
+\section{Teachings}
+
+\cventry{2025}{OpenGL Introduction}{Polytechnique (36h)}
+{Teaching Assistant}{}{}
+\cventry{2024/2025}{Computer Vision}{Polytechnique (12h+18h)}
+{Teaching Assistant}{}{}
+
+\vspace{0.5cm}
+\section{Curriculum}
+
+
+\cvline{2024-}{PhD Student in Computer Science (Claude Bernard University/Polytechnique)}
+\cvline{2023-2024}{Ecole Normal Supérieur (Lyon), Computer Science Department}
+\cvline{2022-2023}{Claude Bernard University (Lyon), Computer Graphics}
 \cvline{2020-2022}{Ecole Normal Supérieur (Lyon), Computer Science Department}
 \cvline{2018-2020}{MPSI, MP* School St-Louis (Paris)}{}{}
 
+\vspace{0.5cm}
+% \newpage
+\section{Internships}
 
-\subsection{\textbf{Certificates:}}
+\cventry{2024}{LIX}{Polytechnique}{5 months, with Marie-Paule CANI}
+{\newline Implicit surfaces optimisation (Internship preparing my PhD topic).}{}
 
-\cventry{2021}{Joint Honours Degree}{Mathematics and Computer Science}{}{University Claude Bernard (Lyon)}
-{}
-\cventry{2018}{Baccalaureate}{S (SI) European with highest honour}
-{High School Jules Ferry (Cannes)}{}{}
+\cventry{2023}{LIRIS}{Claude Bernard University}{3 months, with Eric GALIN}
+{\newline Implicit Surfaces Modeling (Internship preparing my PhD topic).}{}
 
+\cventry{2023}{LIRIS}{Claude Bernard University}{5 months, with Jean-Claude IHEL}
+{\newline Defensive sampling for Monte Carlo rendering (Two minor descoveries).}{}
 
+\cventry{2022}{University of Edimburg}{Edimbourg}{3 months, with Kartic SUBR}
+{\newline NLP for Computer Graphics (Automatic generation of 3D scenes and a user study).}{}
 
-\section{\textbf{Professional experience}}
+\cventry{2021}{INRIA}{Bordeaux}{6 weeks, with Pascal BARLA}
+{\newline Thin layer modelisation (Software development  for BRDF precomputation)}{}
 
-\cventry{2022}{Internship}{University of Edinburgh}
-{Edinburgh}{12 weeks}{Machine learning for 3D scene generation, with Kartic SUBR}
-
-\cventry{2021}{Internship}{INRIA laboratory}
-{Bordeaux (France)}{6 weeks}{Modeling of Thin film for the graphic engine MALIA, with Pascal BARLA}
-
-\cventry{2014}{Internship}{Company Cochlear}
-{Brusselles (Belgium)}{1 week}{Intoduction to the world of research}
-
-
-
-
-\section{\textbf{Personal projects} (\href{https://github.com/Pierre-HB}{github.com/Pierre-HB})}
-
-\cvdoubleitem{2018}{2D game in JAVA using LWJGL}{2019}{First 3D engine using Python}
-\cvdoubleitem{2019/2020}{Improvement of my 3D engine using Python et Ocaml}{2020}{3D engine using OpenGL with JAVA}
-\cvdoubleitem{2020}{First ray tracing algorithm using JAVA}{2020}{Greedy algorithm to solve the Travelling salesman problem with hight optimisations using C++}
-\cvdoubleitem{2022}{Ray tracing algorithm to render displacement map using C++}{2022}{Fractal tree using Implicit surfaces using C++}
-\cvdoubleitem{2022}{Implementation of basic computation on triangulation (Ruppert and Lawson algorithms)}{2022}{Procedural generation of city and road using C++}
+%stage de 3eme...
+%\cventry{2014}{Cochlear}{Bruxelles}{1 semaines, avec Florent HUBERT-BRIERRE}{\newline Introduction à la recherche}{}
 
 
-\section{\textbf{Language}}
-\cvlanguage{English}{C1}{(with Cambridge Advanced Certificate)}
+\newpage
+
+\section{Personal projects (\href{https://github.com/Pierre-HB}{https://github.com/Pierre-HB})}
+
+
+\cvitem{2022}{Procedural generation of city and road using C++}
+\cvitem{2022}{Fractal tree with Implicit surfaces using C++}
+\cvitem{2022}{Ray tracing algorithm to render displacement map using C++}
+\cvitem{2020}{Greedy algorithm to solve the Travelling salesman problem with intensive optimisations using C++}
+\cvitem{2020}{First ray tracing algorithm using JAVA}
+\cvitem{2020}{3D engine using OpenGL with JAVA}
+\cvitem{2019}{Improvement of my 3D engine using Python and Ocaml}
+\cvitem{2019}{First 3D engine using Python}
+\cvitem{2018}{2D game in JAVA using LWJGL}
+
+\vspace{0.5cm}
+\section{Languages}
+
+
 \cvlanguage{French}{Mother tongue}{}
+\cvlanguage{English}{C1 level (Cambridge Advanced)}{}
 
 
-\section{\textbf{Programming languages}}
-% \cvlistdoubleitem{JAVA}{C / C++}
-% \cvlistdoubleitem{Python}{Ocaml}
-\cvitem{}{\listitemsymbol JAVA \hspace{1cm} \listitemsymbol C \hspace{1cm} \listitemsymbol C++ \hspace{1cm} \listitemsymbol Python \hspace{1cm} \listitemsymbol Ocaml}
+\vspace{0.5cm}
+\section{Programming languages}
+
+\vspace{0.2cm}
+
+\cvlistdoubleitem{Python}{C / C++}
+
+\vspace{0.5cm}
+\section{Miscellaneous}
+
+\subsection{Interests}
 
 
-\section{\textbf{Miscellaneous}}
+\cvlistdoubleitem{Video games}{Ballroom dance}
+\cvlistdoubleitem{Hiking}{Roller}
 
-\subsection{\textbf{Interests:\hspace{5.5cm}Qualities:}}
-\cvlistdoubleitem{Rendering games}{Versatile}
+\vspace{0.2cm}
+\subsection{Qualities}
 
-\cvlistdoubleitem{Ballroom dance}{Autonomous}
+
+\cvlistdoubleitem{Versatile}{Autonomous}
 
 
 \end{document}
+
+
